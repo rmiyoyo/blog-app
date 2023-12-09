@@ -1,24 +1,160 @@
-# README
+# Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Blog app is a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+This is a Rails project.
 
-* System dependencies
+<a name="readme-top"></a>
 
-* Configuration
+# 📗 Table of Contents
 
-* Database creation
+- [Blog App](#blog-app)
+  - [Getting Started](#getting-started)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[Blog App\] ](#-blog-app-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Usage](#usage)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-* Database initialization
+<!-- PROJECT DESCRIPTION -->
 
-* How to run the test suite
+# 📖 [Blog App] <a name="about-project"></a>
 
-* Services (job queues, cache servers, search engines, etc.)
+**[Blog App]** is a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-* Deployment instructions
+## 🛠 Built With <a name="built-with"></a>
 
-* ...
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul></ul>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+  </ul>
+</details>
+
+<summary>Blog App</summary>
+  <ul>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+    <li><a href="https://guides.rubyonrails.org/">Rails</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **[decode a morse_code message]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+- postgresqk
+- ruby
+- rails
+
+### Setup
+
+Clone this repository to your desired folder:
+
+<!--
+Example commands:
+
+```sh
+  cd my-folder
+  git clone git@github.com:rmiyoyo/blog-app.git
+```
+--->
+
+### Usage
+
+To run the project, execute the following command:
+```sh
+  cd blog-app
+  rails s
+```
+
+<!--
+Example command:
+
+```sh
+  cd blog-app;
+```
+--->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Raphael Miyoyo**
+
+- GitHub: [@rmiyoyo](https://github.com/rmiyoyo)
+- Twitter: [@r_miyoyo](https://twitter.com/r_miyoyo)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/raphael-miyoyo)
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Add more methods]**
+- [ ] **[Design the Ui]**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+Thank you for stopping by!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./MIT.md) licensed.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
