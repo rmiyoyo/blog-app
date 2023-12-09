@@ -56,7 +56,9 @@ This is a Rails project.
 
 ### Key Features <a name="key-features"></a>
 
-- **[decode a morse_code message]**
+- Show list of posts
+- Add comments
+- Like posts
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -71,7 +73,7 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
-- postgresqk
+- postgresql
 - ruby
 - rails
 
@@ -95,7 +97,11 @@ To run the project, execute the following command:
   cd blog-app
   rails s
 ```
-
+To test the project, execute the following command:
+```sh
+  cd blog-app
+  rspec spec
+```
 <!--
 Example command:
 
@@ -120,8 +126,9 @@ Example command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add more methods]**
-- [ ] **[Design the Ui]**
+- [ ] Host the project online
+- [ ] Design a User Interface
+- [ ] Add second database for posts
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
