@@ -5,9 +5,9 @@ class LikesController < ApplicationController
     like.author = User.find(params[:user_id])
 
     if like.save
-      flash[:success] = 'Like has been added.'
+      flash[:success] = 'Like saved successfully'
     else
-      flash.now[:error] = 'Rolling back. Like has not been added.'
+      flash.now[:error] = 'Error: Like could not be saved'
     end
     redirect_to "/users/#{current_user.id}/posts/#{like.post.id}"
   end

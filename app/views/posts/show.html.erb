@@ -1,3 +1,4 @@
+<!-- app/views/posts/show.html.erb -->
 <div class="flex-col">
   <div id="post" class="border-solid border-4 border-black md:w-1/2 mx-auto w-full mb-5">
     <div class="flex justify-between">
@@ -6,7 +7,7 @@
       </div>
 
       <div class="mr-5">
-        <p>comments: <span class="font-bold"><%= @post.comments_counter %>, </span>Likes: <span class="font-bold"><%= @post.likes_counter %></span></p>
+        <p>comments: <span class="font-bold"><%= @post.comments_counter%>, </span>Likes: <span class="font-bold"><%= @post.likes_counter %></span></p>
       </div>
     </div>
 
@@ -20,5 +21,5 @@
     </div>
   </div>
 
-  <%= render partial: 'shared/comment', locals: { post: @post, comment: @comment } %>
+  <%= render partial: 'shared/comment', locals: {post: @post} %>
 </div>
