@@ -1,5 +1,5 @@
 <div id="post" class="border-solid border-4 border-black md:w-1/2 mx-auto w-full mb-5">
-  <%= link_to user_posts_path(post) do %>
+  <%= link_to user_posts_path(@user) do %>
     <h2 class="font-bold ml-3"><%= post.title %></h2>
   <% end %>
   <p class="mt-5 ml-3"><%= post.text %></p>
