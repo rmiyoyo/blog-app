@@ -54,6 +54,7 @@ group :development do
   gem 'faker'
   gem 'rails_live_reload'
   gem "web-console"
+  gem "meta_request"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -67,7 +68,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem 'shoulda-matchers', '~> 4.0'
-  gem 'webdrivers'
+  # gem "webdrivers", github: 'jmccure/webdrivers', branch:'fix-m1-downloads'
+  gem 'rspec-rails'
 end
 
 gem 'rubocop', '>= 1.0', '< 2.0'
@@ -79,3 +81,5 @@ end
 gem 'rails-controller-testing'
 
 gem 'tailwindcss-rails', '~> 2.0'
+
+gem 'devise', '~> 4.8', '>= 4.8.1'
