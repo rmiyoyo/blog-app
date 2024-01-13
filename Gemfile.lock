@@ -325,7 +325,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
-  devise (~> 4.9)
+  devise (~> 4.8, >= 4.8.1)
   faker
   importmap-rails
   jbuilder
@@ -335,7 +335,6 @@ DEPENDENCIES
   rails (~> 7.1.2)
   rails-controller-testing
   rails_live_reload
-  rake (= 13.1.0)
   rspec-rails
   rubocop (>= 1.0, < 2.0)
   selenium-webdriver
