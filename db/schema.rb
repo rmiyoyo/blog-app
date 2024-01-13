@@ -51,8 +51,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_14_214137) do
     t.integer "posts_counter", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-# added this below
+    # added this below
   t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -64,6 +63,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_14_214137) do
     t.string "unconfirmed_email"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
 
   add_foreign_key "comments", "posts"
   add_foreign_key "comments", "users", column: "author_id"
