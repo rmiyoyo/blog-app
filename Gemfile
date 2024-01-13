@@ -68,8 +68,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem 'shoulda-matchers', '~> 4.0'
-  # gem "webdrivers", github: 'jmccure/webdrivers', branch:'fix-m1-downloads'
-  gem 'rspec-rails'
 end
 
 gem 'rubocop', '>= 1.0', '< 2.0'
