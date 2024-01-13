@@ -1,5 +1,4 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
   content: [
     './public/*.html',
@@ -12,6 +11,12 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        "color-text": "#0D1282",
+        "color-backgroung": "#EEEDED",
+        "color-red": "#D71313",
+        "color-yellow": "#F0DE36"
+    },
     },
   },
   plugins: [
