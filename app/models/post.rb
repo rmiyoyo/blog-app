@@ -5,10 +5,11 @@ class Post < ApplicationRecord
   validates :likes_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 
   belongs_to :author, foreign_key: 'author_id', class_name: 'User'
-  has_many :comments
-  has_many :likes
+  has_many :comments, dependent: :destroy
+  has_many :likes, dependent: :destroy
 
   after_save :update_author_posts_count
+  after_destroy :update_author_posts_count
 
   def five_recent_comments
     comments.order(created_at: :desc).limit(5)
