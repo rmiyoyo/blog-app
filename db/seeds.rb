@@ -1,12 +1,11 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
+# This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
-# Example:
+# Examples:
 #
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
+#   Character.create(name: "Luke", movie: movies.first)
+#
 require 'faker'
 
 Like.destroy_all
@@ -21,7 +20,8 @@ quantity_likes = 20
 users = []
 
 for user_position in 1..quantity_users do
-  temp_user = User.create!(name: "User Number #{user_position}", photo: 'https://placehold.co/200x200', bio: Faker::Lorem.sentences(number: 12 + Random.rand(20)).join(' '), email: "user#{user_position}@blogapp.com", password: "blogapp#{user_position}", posts_counter: 0)
+  temp_user = User.create!(name: "User Number #{user_position}", photo: 'https://placehold.co/200x200', bio: Faker::Lorem.sentences(number: 12 + Random.rand(20)).join(' '), posts_counter: 0)
+  temp_user.skip_confirmation!
   users << temp_user
 end
 
@@ -41,4 +41,4 @@ end
 puts "Created #{User.count} users"
 puts "Created #{Post.count} posts"
 puts "Created #{Comment.count} comments"
-puts "Assigned #{Like.count} likes, at random"
+puts "Assigned #{Like.count} likes, randomly"

@@ -1,6 +1,4 @@
 class PostsController < ApplicationController
-  load_and_authorize_resource
-
   def index
     @user = User.includes(:posts).find_by(id: params[:user_id])
     @posts = @user.posts.includes(:comments, :likes)
@@ -16,7 +14,7 @@ class PostsController < ApplicationController
   def show
     @user = User.find_by(id: params[:user_id])
     @post = @user.posts.find(params[:id])
-    @currrent = current_user
+    @current_user = current_user
     @like = Like.new
   end
 
@@ -32,13 +30,6 @@ class PostsController < ApplicationController
         end
       end
     end
-  end
-
-  def destroy
-    puts 'hello'
-    @post = Post.find(params[:id])
-    @post.destroy
-    redirect_to user_path(@post.author_id), notice: 'Post was successfully deleted.'
   end
 
   private
