@@ -2,7 +2,7 @@ require_relative '../rails_helper'
 
 RSpec.describe Post, type: :model do
   let(:user) { User.new(name: 'John Doe', photo: nil, bio: nil, posts_counter: 0) }
-  let(:post) { user.posts.create(title: 'First Post', text: 'Hello', comments_counter: 0, likes_counter: 0) }
+  let(:post) { user.posts.create(title: 'Post 1', text: 'Hello', comments_counter: 0, likes_counter: 0) }
 
   before { user.save }
 
@@ -39,7 +39,7 @@ RSpec.describe Post, type: :model do
   end
 
   describe '#update_author_posts_count' do
-    let(:post2) { user.posts.build(title: 'Second Post ', text: 'Hi', comments_counter: 0, likes_counter: 0) }
+    let(:post2) { user.posts.build(title: 'Post 2 ', text: 'Hi', comments_counter: 0, likes_counter: 0) }
     it 'Update the author posts_counter after saving' do
       expect do
         post2.save

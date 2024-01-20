@@ -6,8 +6,8 @@ RSpec.describe 'Post', type: :system do
     @user1 = User.create(name: 'John Doe', photo: 'https://placehold.co/200x200',
                          bio: "Hello, I'm John Doe", posts_counter: 5)
     @user2 = User.create(name: 'Jane Doe', photo: 'https://placehold.co/200x200', bio: "Hello, I'm Jane Doe")
-    @post1 = @user1.posts.create(title: 'First Post', text: 'Lorem ipsum')
-    @post2 = @user1.posts.create(title: 'Second Post', text: 'Dolor sit amet')
+    @post1 = @user1.posts.create(title: 'Post 1', text: 'Lorem ipsum')
+    @post2 = @user1.posts.create(title: 'Post 2', text: 'Dolor sit amet')
     @comment = Comment.create(text: 'comment 1', author: @user2, post: @post1)
   end
 

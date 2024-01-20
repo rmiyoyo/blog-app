@@ -5,9 +5,9 @@ RSpec.describe 'Users', type: :system do
   before do
     @user1 = User.create(name: 'John Doe', photo: 'https://placehold.co/200x200',
                          bio: "Hello, I'm John Doe", posts_counter: 5)
-    @user2 = User.create(name: 'Jane Doe', photo: 'https://placehold.co/200x200', bio: "Hello, I'm Jane Doe")
-    @user1.posts.create(title: 'First Post', text: 'Lorem ipsum', comments_counter: 1, likes_counter: 2)
-    @user1.posts.create(title: 'Second Post', text: 'Dolor sit amet')
+    @user2 = User.create(name: 'Cary Doe', photo: 'https://placehold.co/200x200', bio: "Hello, I'm Cary Doe")
+    @user1.posts.create(title: 'Post 1', text: 'Lorem ipsum', comments_counter: 1, likes_counter: 2)
+    @user1.posts.create(title: 'Post 2', text: 'Dolor sit amet')
     @user2.posts.create(title: 'Post 3', text: 'Consectetur adipiscing elit')
   end
 

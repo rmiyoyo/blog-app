@@ -2,7 +2,7 @@ require_relative '../rails_helper'
 
 RSpec.describe PostsController, type: :request do
   let(:user) { User.create(name: 'John Doe', photo: nil, bio: nil, posts_counter: 0) }
-  let(:post) { user.posts.create(title: 'First Post', text: 'Hello', comments_counter: 0, likes_counter: 0) }
+  let(:post) { user.posts.create(title: 'Post 1', text: 'Hello', comments_counter: 0, likes_counter: 0) }
 
   describe 'GET #index' do
     it 'returns a successful response' do
