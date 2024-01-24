@@ -1,13 +1,15 @@
-<!-- app/views/shared/_user_show.html.erb -->
-<!-- This partial is used to display a users information on the user show page and post index -->
+<!-- app/views/users/shared/_user_show.html.erb -->
+<!-- user partial used for User#show and post#index -->
 
-<div id="<%= user.id %>" class="flex justify-between items-center w-full md:w-1/2 mx-auto mb-5">
-  <div class="w-1/4 border-solid border-black border-4 h-full">
-    <img src="<%= user.photo %>" class="rounded-full w-16 h-16 mr-4" alt="User Avatar">
+<div id="<%= user.id %>" class="flex justify-between items-center w-full md:w-1/2 mx-auto bg-white border-gray-200 rounded-lg shadow">
+  
+  <div class="w-1/4 rounded-lg shadow">
+    <img src="<%= user.photo %>" alt="User Photo">
   </div>
 
-  <div class="w-3/4">
-    <h1 class="text-2xl font-bold"><%= user.name %></h1>
-    <div>Total posts: <%=user.posts_counter %></div>
+  <div class="w-2/3 h-full">
+    <h1 class="md:text-4xl font-extrabold text-xl"><%= user.name %></h1>
+    <div>Number of posts: <span class="font-extrabold"><%=user.posts_counter %></span></div>
   </div>
+
 </div>
