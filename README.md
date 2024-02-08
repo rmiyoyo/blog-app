@@ -30,9 +30,9 @@ This is a Rails project.
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Blog App] <a name="about-project"></a>
+# 📖 Blog App <a name="about-project"></a>
 
-**[Blog App]** is a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
+**Blog App** is a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -79,20 +79,12 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:rmiyoyo/blog-app.git
-```
---->
-
 ### Usage
 
 To run the project, execute the following command:
 ```sh
   cd blog-app
+  bundle install
   rails s
 ```
 To test the project, execute the following command:
@@ -100,13 +92,6 @@ To test the project, execute the following command:
   cd blog-app
   rspec spec
 ```
-<!--
-Example command:
-
-```sh
-  cd blog-app;
-```
---->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
